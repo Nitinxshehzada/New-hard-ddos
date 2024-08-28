@@ -409,8 +409,8 @@ def show_help(message):
 🤖 To See Admin Commands:
 💥 /admincmd : Shows All Admin Commands.
 
-Buy From :- @THE_YAMRAJ
-Official Channel :- @THE_YAMRAJ
+Buy From :- @Felixbbyy 🧃💦
+Official Channel :- @Felixbbyy 💦
 '''
     for handler in bot.message_handlers:
         if hasattr(handler, 'commands'):
@@ -429,7 +429,7 @@ def welcome_rules(message):
 
 1. Dont Run Too Many Attacks !! Cause A Ban From Bot
 2. Dont Run 2 Attacks At Same Time Becz If U Then U Got Banned From Bot.
-3. MAKE SURE YOU JOINED @THE_YAMRAJ OTHERWISE NOT WORK
+3. MAKE SURE YOU JOINED @Felixbbyy 🧃🌷 OTHERWISE NOT WORK
 4. We Daily Checks The Logs So Follow these rules to avoid Ban!!'''
     bot.reply_to(message, response)
 
@@ -491,7 +491,7 @@ def broadcast_message(message):
 @bot.message_handler(commands=['start', 'menu'])
 def send_welcome(message):
     markup = telebot.types.ReplyKeyboardMarkup(resize_keyboard=True)
-    btn1 = telebot.types.KeyboardButton('🩶𝐅𝐄𝐋𝐈𝐗 𝐕𝐈𝐏 𝐃𝐃𝐎𝐒💦') 
+    btn1 = telebot.types.KeyboardButton('🩶𝐅𝐄𝐋𝐈𝐗 𝐒𝐓𝐀𝐑𝐓 𝐃𝐃𝐎𝐒💦') 
     markup.add(btn1) 
     bot.send_message(message.chat.id, "Welcome To YAMRAJ || VIP Please choose an option:", reply_markup=markup)
 
@@ -512,7 +512,7 @@ def handle_my_info(message):
     bot.reply_to(message, response)
 
 # Function to handle Attack button
-@bot.message_handler(func=lambda message: message.text == '🩶𝐅𝐄𝐋𝐈𝐗 𝐕𝐈𝐏 𝐃𝐃𝐎𝐒💦')
+@bot.message_handler(func=lambda message: message.text == '🩶𝐅𝐄𝐋𝐈𝐗 𝐒𝐓𝐀𝐑𝐓 𝐃𝐃𝐎𝐒💦')
 def handle_attack_button(message):
     bot.reply_to(message, "To use the attack command, type it in the following format:\n\n/attack <host> <port> <time>")
 
