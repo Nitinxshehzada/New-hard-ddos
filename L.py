@@ -7,13 +7,13 @@ import datetime
 import os
 
 # Insert your Telegram bot token here
-bot = telebot.TeleBot('7158841748:AAEsCLQFZz2UOpzrwhcd-vyKmmbcXkTP9MI')
+bot = telebot.TeleBot('7476904793:AAEMQm39nDIepVlVP4t9cqqYHLaLbaeBQMo')
 
 # Owner user ID
-owner_id = "5071535135"
+owner_id = "5464427719"
 
 # Admin user IDs
-admin_ids = ["1298994945"]
+admin_ids = ["5464427719"]
 
 # File to store allowed user IDs
 USER_FILE = "users.txt"
@@ -325,7 +325,7 @@ def start_attack_reply(message, target, port, time):
     user_info = message.from_user
     username = user_info.username if user_info.username else user_info.first_name
             
-    response = f"🚀Attack Sent Successfully! 🚀\n\n🗿𝐓𝐚𝐫𝐠𝐞𝐭: {target}:{port}\n🕦Attack Duration: {time}\n💣Method: XARSHOWNER\n\n🔥Status: Attack in Progress... 🔥"
+    response = f"🚀𝐅𝐞𝐥𝐢𝐱 𝐕𝐈𝐏 𝐀𝐭𝐭𝐚𝐜𝐤 𝐒𝐞𝐧𝐭 𝐒𝐮𝐜𝐜𝐞𝐬𝐬𝐟𝐮𝐥𝐥𝐲! 🚀\n\n🗿𝐓𝐚𝐫𝐠𝐞𝐭: {target}:{port}\n🕦Attack Duration: {time}\n💣Method: @Felixbbyy \n\n🔥Status: Attack in Progress... 🔥"
     bot.reply_to(message, response)
 
 # Dictionary to store the last time each user ran the /bgmi command
@@ -368,7 +368,7 @@ def handle_attack(message):
             response ="Please provide attack in the following format:\n\n<host> <port> <time>" 
     else:
         response = ("🚫 Unauthorized Access! 🚫\n\nOops! It seems like you don't have permission to use the /attack command. "
-                    "To gain access and unleash the power of attacks, you can:\n\n👉 Contact an Admin or the Owner for approval.\n"
+                    "To gain access and unleash the power of attacks, you can:\n\n👉 Contact Admin 🧃 @Felixbbyy 🌷 for approval.\n"
                     "🌟 Become a proud supporter and purchase approval.\n💬 Chat with an admin now and level up your capabilities!\n\n"
                     "🚀 Ready to supercharge your experience? Take action and get ready for powerful attacks!")
 
@@ -491,10 +491,8 @@ def broadcast_message(message):
 @bot.message_handler(commands=['start', 'menu'])
 def send_welcome(message):
     markup = telebot.types.ReplyKeyboardMarkup(resize_keyboard=True)
-    btn1 = telebot.types.KeyboardButton('🚀Attack')
-    btn2 = telebot.types.KeyboardButton('💼ResellerShip')
-    btn3 = telebot.types.KeyboardButton('ℹ️ My Info')
-    markup.add(btn1, btn2, btn3)
+    btn1 = telebot.types.KeyboardButton('🩶𝐅𝐄𝐋𝐈𝐗 𝐕𝐈𝐏 𝐃𝐃𝐎𝐒💦') 
+    markup.add(btn1) 
     bot.send_message(message.chat.id, "Welcome To YAMRAJ || VIP Please choose an option:", reply_markup=markup)
 
 # Function to handle ResellerShip button
@@ -514,7 +512,7 @@ def handle_my_info(message):
     bot.reply_to(message, response)
 
 # Function to handle Attack button
-@bot.message_handler(func=lambda message: message.text == '🚀Attack')
+@bot.message_handler(func=lambda message: message.text == '🩶𝐅𝐄𝐋𝐈𝐗 𝐕𝐈𝐏 𝐃𝐃𝐎𝐒💦')
 def handle_attack_button(message):
     bot.reply_to(message, "To use the attack command, type it in the following format:\n\n/attack <host> <port> <time>")
 
